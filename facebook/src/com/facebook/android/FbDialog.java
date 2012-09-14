@@ -80,6 +80,13 @@ public class FbDialog extends Dialog {
          */
         createCrossImage();
         
+        
+        /* Removed cancel of the dialog since no callback is given
+         * to the originating activity when the back button is pressed
+         * @author Luiz Felipe Garcia Pereira
+         */
+        setCancelable(false);
+        
         /* Now we know 'x' drawable width and height, 
          * layout the webivew and add it the mContent layout
          */
